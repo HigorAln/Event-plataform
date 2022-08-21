@@ -61,7 +61,7 @@ export function Lesson({ title, availableAt, slug, type }: LessonProps){
       </div>
 
       {isActiveLesson && (
-        <div className='w-5 h-5 bg-green-500 absolute top-[61px] -left-[14px] rotate-45 translate-x-1/2 translate-y-1/2'></div>
+        <div className='w-5 h-5 bg-green-500 rounded absolute top-[61px] -left-[14px] rotate-45 translate-x-1/2 translate-y-1/2'></div>
       )}
     </Link>
   )
