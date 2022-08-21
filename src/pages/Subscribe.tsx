@@ -27,6 +27,10 @@ export function Subscribe(){
 
     navigate("/event");
   }
+  
+  function handleRedirect(){
+    navigate("/event");
+  }
 
   return(
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
@@ -71,9 +75,9 @@ export function Subscribe(){
 
           <div className="flex flex-col items-center pt-3 gap-2">
             <span className="text-gray-300">ou</span>
-            <a href="/event" className="p-2 rounded w-4/6 border border-[transparent] hover:border-white transition-all text-center cursor-pointer">
+            <button onClick={handleRedirect} className="p-2 rounded w-4/6 border border-[transparent] hover:border-white transition-all text-center cursor-pointer">
               Acessar Aulas
-            </a>
+            </button>
           </div>
         </div>
       </div>
