@@ -20,7 +20,7 @@ export function Lesson({ title, availableAt, slug, type }: LessonProps){
   const isActiveLesson = slugParams === slug;
 
   return(
-    <Link to={`/event/lesson/${slug}`} className='group'>
+    <Link to={`/event/lesson/${slug}`} className='group relative'>
       <span className="text-gray-300">
         {availableDateFormatted}
       </span>
@@ -59,6 +59,10 @@ export function Lesson({ title, availableAt, slug, type }: LessonProps){
           {title}
         </strong>
       </div>
+
+      {isActiveLesson && (
+        <div className='w-5 h-5 bg-green-500 absolute top-[61px] -left-[14px] rotate-45 translate-x-1/2 translate-y-1/2'></div>
+      )}
     </Link>
   )
 }

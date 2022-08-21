@@ -68,9 +68,16 @@ export function Subscribe(){
               Garantir minha vaga
             </button>
           </form>
+
+          <div className="flex flex-col items-center pt-3 gap-2">
+            <span className="text-gray-300">ou</span>
+            <a href="/event" className="p-2 rounded w-4/6 border border-[transparent] hover:border-white transition-all text-center cursor-pointer">
+              Acessar Aulas
+            </a>
+          </div>
         </div>
       </div>
-      <img src="/assets/code-mockup.png" alt="" className="mt-10" />
+      <img src="/assets/code-mockup.png" alt="" className="mt-0" />
     </div>
   )
 }
